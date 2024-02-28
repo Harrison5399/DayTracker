@@ -23,7 +23,7 @@ router.post("/",(req,res,next)=>{
     // add current activity to days data
     let todays_date = new Date()
     todays_date.setTime(todays_date.getTime()+todays_date.getTimezoneOffset());
-    let time = todays_date.getHours() + ":" + todays_date.getMinutes()
+    let time = todays_date.getHours().toString().padStart() + ":" + todays_date.getMinutes()
     let date = todays_date.toISOString().split('T')[0]
 
     // CHANGE DATE HERE \/

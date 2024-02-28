@@ -20,11 +20,28 @@ router.get("/:range",(req,res,next)=>{
 
     // get json from each day and push to json obj
     let data = []
+    let today = new Date()
+    today.setTime(today.getTime()+today.getTimezoneOffset());
+    let today_time = today.getHours().toString().padStart(2, "0") + ":" + today.getMinutes()
+    let today_date = today.toISOString().split('T')[0]
+
     for (const d of day_range) {
         let day = d.toISOString().split('T')[0]
+        let days_data =  JSON.parse(fs.readFileSync(path.join('src/data', day + '.json'), "utf-8"))
+
+        if (day === today_date) {
+            let activity_data = JSON.parse(fs.readFileSync('src/data/activity.json', "utf-8"))
+
+            days_data.push({
+                'start': activity_data.start,
+                'end': today_time,
+                'event': activity_data.event
+            })
+        }
+
         data.push(
             {
-                [day] : JSON.parse(fs.readFileSync(path.join('src/data', day + '.json'), "utf-8"))
+                [day] : days_data
             }
         )
     }
