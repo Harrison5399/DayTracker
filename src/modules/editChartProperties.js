@@ -57,7 +57,7 @@ fetch('/DayActivity/getChartProperties/')
                 value.type = 'text'
                 value.className = 'local'
                 value.name = property
-                value.placeholder = chart_properties.local[local_k][property]
+                value.innerHTML = chart_properties.local[local_k][property]
                 container.appendChild(value)
 
                 label_properties.appendChild(container)
