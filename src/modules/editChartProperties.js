@@ -4,10 +4,12 @@ fetch('/DayActivity/getChartProperties/')
         console.log(chart_properties)
 
         const global_title = document.createElement('h3')
-        global_title.innerText = '<pre>global:</pre>'
+        tab_.innerText = 'global:'
+        global_title.innerHTML = tab_
         document.body.appendChild(global_title)
 
         const global_container = document.createElement('div')
+        const tab_ = document.createElement('pre')
         global_container.id = 'global_container'
 
         for (let global_k in chart_properties.global) {
