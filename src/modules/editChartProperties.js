@@ -62,7 +62,7 @@ fetch('/DayActivity/getChartProperties/')
 
                 label_properties.appendChild(container)
             }
-            local_container.body.appendChild(label_properties)
+            local_container.appendChild(label_properties)
         }
         document.body.appendChild(local_container)
     })
