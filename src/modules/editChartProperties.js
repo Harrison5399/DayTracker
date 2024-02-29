@@ -1,8 +1,10 @@
 fetch('/DayActivity/getChartProperties/')
     .then((res) => {return res.json()})
     .then((chart_properties) => {
+        console.log(chart_properties)
+
         const global_title = document.createElement('h4')
-        global_title.innerText = '&emsp;global:'
+        global_title.innerText = '\tglobal:'
         document.body.appendChild(global_title)
 
         for (let global_k in chart_properties.global) {
