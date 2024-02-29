@@ -45,6 +45,8 @@ router.post("/",(req,res,next)=>{
         }
     }
 
+    fs.writeFileSync(path.join(__dirname, '../../data', 'activitieschartproperties.json'), data, "utf-8")
+
     res.setHeader('Content-Type', 'application/json')
     res.json(data)
     res.end()
