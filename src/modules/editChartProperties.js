@@ -4,7 +4,7 @@ fetch('/DayActivity/getChartProperties/')
         console.log(chart_properties)
 
         const global_title = document.createElement('h3')
-        global_title.innerText = '&nbsp; global:'
+        global_title.innerText = '&emsp; global:'
         document.body.appendChild(global_title)
 
         const global_container = document.createElement('div')
@@ -31,7 +31,7 @@ fetch('/DayActivity/getChartProperties/')
         document.body.appendChild(global_container)
 
         const local_title = document.createElement('h3')
-        local_title.innerText = '&nbsp; local:'
+        local_title.innerText = '&emsp; local:'
         document.body.appendChild(local_title)
 
         const local_container = document.createElement('div')
