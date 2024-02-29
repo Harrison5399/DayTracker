@@ -1,0 +1,15 @@
+{
+  "global": {
+    "borderWidth": 1
+  },
+  "local": {
+    "unknown": {
+      "backgroundColor": "rgba(0, 0, 0, 0.2)",
+      "borderColor": "rgba(20, 20, 20, 1)"
+    },
+    "class": {
+      "backgroundColor": "rgba(255, 26, 104, 0.2)",
+      "borderColor": "rgba(255, 26, 104, 1)"
+    }
+  }
+}

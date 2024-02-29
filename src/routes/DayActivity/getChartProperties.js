@@ -4,9 +4,9 @@ const path = require('path')
 
 const router=express.Router()
 
-router.get("/:date",(req,res,next)=>{
+router.get("/",(req,res,next)=>{
 
-    let data = JSON.parse(fs.readFileSync(path.join('src/data', day + '.json'), "utf-8"))
+    let data = JSON.parse(fs.readFileSync('src/data/activitieschartproperties.json', "utf-8"))
     res.setHeader('Content-Type', 'application/json')
 
     res.json(data)

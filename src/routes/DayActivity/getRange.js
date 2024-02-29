@@ -29,6 +29,7 @@ router.get("/:range",(req,res,next)=>{
         let day = d.toISOString().split('T')[0]
         let days_data =  JSON.parse(fs.readFileSync(path.join('src/data', day + '.json'), "utf-8"))
 
+        // instead of this, post to editActivity for between curr day and last day edge case
         if (day === today_date) {
             let activity_data = JSON.parse(fs.readFileSync('src/data/activity.json', "utf-8"))
 

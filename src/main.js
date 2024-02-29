@@ -11,6 +11,7 @@ const viewroute=require("./routes/view.js")
 const DayActvity_add=require("./routes/DayActivity/add")
 const DayActvity_get=require("./routes/DayActivity/get")
 const DayActvity_getRange=require("./routes/DayActivity/getRange")
+const DayActvity_getChartProperties=require("./routes/DayActivity/getChartProperties")
 const DayActvity_editActivity=require("./routes/DayActivity/editActivity")
 
 // Creating express server
@@ -31,11 +32,12 @@ app.use("/chart/view", viewroute)
 app.use("/DayActivity/add", DayActvity_add)
 app.use("/DayActivity/get", DayActvity_get)
 app.use("/DayActivity/getRange", DayActvity_getRange)
+app.use("/DayActivity/getRange", DayActvity_getChartProperties)
 app.use("/DayActivity/editActivity", DayActvity_editActivity)
+app.use("/DayActivity/getChartProperties", DayActvity_editActivity)
 
 
-
-app.listen((8081),()=>{
-
-    console.log("Server is Running")
+const PORT = 8080
+app.listen(PORT,()=>{
+    console.log("SERVER RUNNING ON PORT: " + PORT)
 }) 
