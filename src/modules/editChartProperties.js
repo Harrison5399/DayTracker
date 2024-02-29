@@ -22,6 +22,6 @@ fetch('/DayActivity/getChartProperties/')
             value.innerText = chart_properties.global[global_k]
 
             container.appendChild(value)
-
+            document.body.appendChild(container)
         }
     })
