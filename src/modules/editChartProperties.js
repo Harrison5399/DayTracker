@@ -19,7 +19,7 @@ fetch('/DayActivity/getChartProperties/')
             value.type = 'text'
             value.className = 'global'
             value.name = global_k
-            value.innerText = chart_properties.global[global_k]
+            value.placeholder = chart_properties.global[global_k]
 
             container.appendChild(value)
             document.body.appendChild(container)
