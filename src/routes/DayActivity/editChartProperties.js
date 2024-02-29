@@ -30,7 +30,7 @@ router.post("/",(req,res,next)=>{
      */
 
     let req_data = req.body
-    let data = JSON.parse(fs.readFileSync(path.join(__dirname, '../../data', activitieschartproperties  + '.json'), "utf-8"))
+    let data = JSON.parse(fs.readFileSync(path.join(__dirname, '../../data', 'activitieschartproperties.json'), "utf-8"))
 
     if (Object.keys(req_data).includes("global")){
         data.global = {
