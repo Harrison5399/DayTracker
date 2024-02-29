@@ -6,7 +6,7 @@ const router=express.Router()
 
 router.post("/",(req,res,next)=>{
 
-    let req_data = req.json()
+    let req_data = req.body
     console.log('req_data:')
     console.log(req_data)
     let data = JSON.parse(fs.readFileSync('src/data/activitieschartproperties.json', "utf-8"))
