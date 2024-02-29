@@ -54,4 +54,8 @@ router.post("/",(req,res,next)=>{
 
 })
 
+router.get("/", (req, res) => {
+    res.render('editChartProperties.pug')
+})
+
 module.exports = router

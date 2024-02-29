@@ -1,7 +1,14 @@
 {
+  "global": {
+    "borderWidth": 1
+  },
   "local": {
-    "class": {
-      "backgroundColor" : "rgba(0, 0, 255, 0.2)",
+    "homework": {
+      "backgroundColor" : "rgba(255, 0, 255, 0.2)",
+      "borderColor" : "rgba(20, 20, 255, 0.2)"
+    },
+    "sleep": {
+      "backgroundColor" : "rgba(255, 255, 0, 0.2)",
       "borderColor" : "rgba(20, 20, 255, 0.2)"
     }
   }
