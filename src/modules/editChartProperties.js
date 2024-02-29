@@ -12,12 +12,16 @@ fetch('/DayActivity/getChartProperties/')
             container.className = 'keyvalue'
 
             const key = document.createElement('p')
-            key.innerText = global_k
+            key.innerText = global_k + ' : '
+            container.appendChild(key)
 
             const value = document.createElement('input')
             value.type = 'text'
             value.className = 'global'
             value.name = global_k
             value.innerText = chart_properties.global[global_k]
+
+            container.appendChild(value)
+
         }
     })
