@@ -57,11 +57,12 @@ fetch('/DayActivity/getChartProperties/')
                 value.type = 'text'
                 value.className = 'local'
                 value.name = property
-                value.textContent = chart_properties.local[local_k][property]
+                value.value = chart_properties.local[local_k][property]
                 container.appendChild(value)
 
                 label_properties.appendChild(container)
             }
-            document.body.appendChild(label_properties)
+            local_container.body.appendChild(label_properties)
         }
+        document.body.appendChild(local_container)
     })
