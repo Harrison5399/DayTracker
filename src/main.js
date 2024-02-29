@@ -13,6 +13,7 @@ const DayActvity_get=require("./routes/DayActivity/get")
 const DayActvity_getRange=require("./routes/DayActivity/getRange")
 const DayActvity_getChartProperties=require("./routes/DayActivity/getChartProperties")
 const DayActvity_editActivity=require("./routes/DayActivity/editActivity")
+const DayActvity_editChartProperties=require("./routes/DayActivity/editChartProperties")
 
 // Creating express server
 const app=express()
@@ -34,6 +35,7 @@ app.use("/DayActivity/get", DayActvity_get)
 app.use("/DayActivity/getRange", DayActvity_getRange)
 app.use("/DayActivity/getChartProperties", DayActvity_getChartProperties)
 app.use("/DayActivity/editActivity", DayActvity_editActivity)
+app.use("/DayActivity/editChartProperties", DayActvity_editChartProperties)
 
 
 const PORT = 8080

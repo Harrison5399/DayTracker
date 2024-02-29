@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12ec7cd2-7c9a-4de8-bade-b5352f3f37e5" name="Changes" comment="Initial Commit and Push">
-      <change afterPath="$PROJECT_DIR$/src/routes/DayActivity/editChartProperties.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +89,7 @@
       <workItem from="1708985892917" duration="807000" />
       <workItem from="1709082667011" duration="8582000" />
       <workItem from="1709146446061" duration="4669000" />
-      <workItem from="1709231225712" duration="3671000" />
+      <workItem from="1709231225712" duration="3778000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit and Push">
       <option name="closed" value="true" />
@@ -156,7 +155,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709234560966</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Initial Commit and Push">
+      <option name="closed" value="true" />
+      <created>1709235428404</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709235428404</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
