@@ -10,6 +10,10 @@
     "class": {
       "backgroundColor": "rgba(255, 26, 104, 0.2)",
       "borderColor": "rgba(255, 26, 104, 1)"
+    },
+    "hi": {
+      "backgroundColor": "rgba(0, 255, 0, 0.2)",
+      "borderColor": "rgba(20, 255, 20, 1)"
     }
   }
 }
