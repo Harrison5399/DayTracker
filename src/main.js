@@ -32,12 +32,12 @@ app.use("/chart/view", viewroute)
 app.use("/DayActivity/add", DayActvity_add)
 app.use("/DayActivity/get", DayActvity_get)
 app.use("/DayActivity/getRange", DayActvity_getRange)
-app.use("/DayActivity/getRange", DayActvity_getChartProperties)
+app.use("/DayActivity/getChartProperties", DayActvity_getChartProperties)
 app.use("/DayActivity/editActivity", DayActvity_editActivity)
-app.use("/DayActivity/getChartProperties", DayActvity_editActivity)
 
 
 const PORT = 8080
 app.listen(PORT,()=>{
+
     console.log("SERVER RUNNING ON PORT: " + PORT)
 }) 
