@@ -4,9 +4,9 @@ fetch('/DayActivity/getChartProperties/')
         console.log(chart_properties)
 
         const global_title = document.createElement('h3')
-        const tab_ = document.createElement('pre')
-        tab_.innerText = 'global:'
-        global_title.appendChild(tab_)
+        const tab_global = document.createElement('pre')
+        tab_global.innerText = '\tglobal:'
+        global_title.appendChild(tab_global)
 
         document.body.appendChild(global_title)
         const global_container = document.createElement('div')
@@ -33,7 +33,9 @@ fetch('/DayActivity/getChartProperties/')
         document.body.appendChild(global_container)
 
         const local_title = document.createElement('h3')
-        local_title.innerText = '<pre>local:</pre>'
+        const tab_local = document.createElement('pre')
+        tab_local.innerText = '\tlocal:'
+        local_title.appendChild(tab_local)
         document.body.appendChild(local_title)
 
         const local_container = document.createElement('div')
