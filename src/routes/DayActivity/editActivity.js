@@ -8,6 +8,13 @@ const router=express.Router()
     {
         "activity": "label"
     }
+
+    RETURNS:
+    {
+        "date": {date_data},
+        "date": {date_data},
+        "date": {date_data}
+    }
  */
 router.post("/",(req,res,next)=>{
 
@@ -111,6 +118,12 @@ router.post("/",(req,res,next)=>{
     // remove old activity and replace with new one
     res.end()
 
+
+})
+
+router.get("/", (req, res) => {
+
+    res.render('editActivity.pug')
 
 })
 
