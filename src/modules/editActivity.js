@@ -21,7 +21,7 @@ container.appendChild(btn)
 
 function postEdit() {
     let event = document.getElementById('label').value
-
+    console.log(event)
     if (event !== '') {
 
         let post_data = {
